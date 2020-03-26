@@ -1,32 +1,33 @@
 <html>
-    <head> 
-        <title> Start.ng | Html Elements </title>
-        <link rel="styelsheet" type="text/css" href=""/>
-        
-        <meta name="description" content="HTML Elements in detail"/>
-        
-        <base href="">
+    <head>
+            <title> Loop</title> 
     </head>
-    <body>
-        <h1>First web page</h1>
-        <p>Kindly do exactly what you see here as it would affect your score</p>
-        <p>Whether it is your first webpage in life or not, use the heading above it won't bite</p>
-        <h2>H2 Heading</h2>
-        <p>As a best practice your webpage should just have one</p>
-        <p>element</p>
-        <h3>h3 Heading</h3>
-        <p>This test is too simpleto fail</p>
-        <p>It is simply a test on how much you have been following the course.</p>
-        <h4>H4 Heading</h4>
-        <p>Use the file structure that will be shown here </p>
-        <pre>    :::first_webpage:::</pre>
-        <pre>            |</pre>
-        <pre>            --------:::index.html:::</pre>
-        <pre>            |</pre>
-        <pre>            --------:::index.css:::</pre>
-        <pre>            |</pre>
-        <pre>            --------:::index.js:::</pre>
-
-    </body>
-
-    </html>   
+        <body>
+            <h3 id="what"></h3>
+                    
+            <script> 
+                var i, name="Emmanuel", text ="";
+                var courses=["Maths","Javascript","English","Yoruba","Digital Marketting"];
+                //Display the name
+                document.write("Name is : " + name + "<br>");               
+                
+                for(i=0; i<5; i++)
+                {
+                    text = text + courses[i]+ "<br>";
+                    //display the courses in the array
+                    document.getElementById("what").innerHTML = text;
+                }
+                 var input= prompt("Enter limit which is 200");
+                 var even =0;
+                 function printEven(input){
+                     for (var i=1; i<=input; i++){
+                          if(i % 2  === 0){
+                             document.write(i  + "<br>");
+                            even++;
+                         }
+                     }
+                 }
+                printEven(input);
+                </script> 
+        </body>
+</html>
