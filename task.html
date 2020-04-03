@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let Object1 = {Principal: 2500, time: 1.8}
+        let Object2 = {Principal: 1000, time: 5 }
+        let Object3 = {Principal: 3000, time: 1 }
+        let Object4 = {Principal: 2000, time: 3 }
+        let rate1 = 0, rate2 = 0, rate3 =0, rate4 =0
+//Finding the rate for Object1
+        
+        if (Object1['Principal'] >= 2500 && Object1['time'] > 1){
+            rate1 =3
+        }
+        else if (Object1['Principal'] >= 2500 && Object1['time'] >= 3){
+            rate1 = 4
+        }
+        else if(Object1['Principal'] < 2500 || Object1['time'] <= 1){
+            rate1 = 2
+        }
+        else {
+            rate1 = 1
+        }
+//Finding the rate for Object2
+        if (Object2['Principal'] >= 2500 && Object2['time'] > 1){
+             rate2 =3
+        }
+        else if (Object2['Principal'] >= 2500 && Object2['time'] >= 3){
+             rate2 = 4
+        }
+        else if(Object2['Principal'] < 2500 || Object2['time'] <= 1){
+             rate2 = 2
+        }
+        else {
+             rate2 = 1
+        }
+//finding the rate for Object3
+        if (Object3['Principal'] >= 2500 && Object3['time'] > 1){
+             rate3 =3
+        }
+        else if (Object3['Principal'] >= 2500 && Object3['time'] >= 3){
+             rate3 = 4
+        }
+        else if(Object3['Principal'] < 2500 || Object3['time'] <= 1){
+             rate3 = 2
+        }
+        else {
+             rate3 = 1
+        }
+        //finding the rate for Object4
+        if (Object4['Principal'] >= 2500 && Object4['time'] > 1){
+             rate4 =3
+        }
+        else if (Object4['Principal'] >= 2500 && Object4['time'] >= 3){
+             rate4 = 4
+        }
+        else if(Object4['Principal'] < 2500 || Object4['time'] <= 1){
+             rate4 = 2
+        }
+        else {
+             rate4 = 1
+        }
+
+            let interest1 =0 ,interest2 =0,interest3 =0,interest4 =0
+        function interestCalculator(disp ){
+             
+             interest1 =(Object1['Principal'] * rate1 * Object1['time'] / 100) 
+             interest2 =(Object2['Principal'] * rate2 * Object2['time'] /100) 
+             interest3 =(Object3['Principal'] * rate3 * Object3['time'] / 100) 
+             interest4 =(Object4['Principal'] * rate4 * Object4['time'] /100) 
+             console.log(disp)
+            let interestData1 = console.log ({Principal: Object1['Principal'], rate: rate1, time: Object1['time'], interest: interest1})
+            console.log(disp)
+            let interestData2 = console.log ({Principal: Object2['Principal'], rate: rate2, time: Object2['time'], interest: interest2})
+            console.log(disp)
+            let interestData3 = console.log ({Principal: Object3['Principal'], rate: rate3, time: Object3['time'], interest: interest3})
+            console.log(disp)
+            let interestData4 = console.log ({Principal: Object4['Principal'], rate: rate4, time: Object4['time'], interest: interest4})
+            return disp
+            
+        }
+        let pass = "This array consists of Principal, rate , time and interest"
+                interestCalculator(pass)
+        
+        
+        
+        </script>
+
+</body>
+</html>
