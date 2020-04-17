@@ -1,0 +1,27 @@
+main{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ p{
+    color:rgb(194, 40, 40);
+    box-sizing: border-box;
+}
+form,h3{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    line-height: 2.5;
+}
+img{
+    border:2;
+    width:80vh;
+    height:60vh;
+    transform:rotate(90deg);
+}
+p,textarea{
+    font-family: sans-serif;
+}
