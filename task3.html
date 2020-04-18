@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let realNum =100;  
+let arr1=[];
+
+function sub(num){
+ for(let i=1; i<num; i++){
+     arr1.push(i);//this inserts values into the array as long as the array is 
+
+    console.log(arr1);
+     if(i%2 == 0)
+     {
+        arr1.pop();
+         arr1.push("yu");
+         
+     }
+     if(i%3 == 0){
+        arr1.pop();
+         arr1.push("gi");
+     }
+     if(i%5 == 0){
+        arr1.pop();
+         arr1.push("oh");
+     }
+     if(i%2 == 0 && i%3 == 0){
+        arr1.pop();
+         arr1.push("yu-gi");
+     }
+     if(i%2 ==0 && i%3 == 0 && i%5 == 0){
+        arr1.pop();
+         arr1.push("yu-gi-oh");
+     }
+     
+ }
+}
+//this calls the function and returns the value for 100 numbers
+sub(realNum);
+//this calls the function and returns the value for 30 numbers
+sub(30);
+    </script>
+</body>
+</html>
